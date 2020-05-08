@@ -1,1 +1,2 @@
-newsboat/.newsboat/cache.db
+newsboat/.newsboat/*
+!newsboat/.newsboat/urls
