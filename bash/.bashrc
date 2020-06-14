@@ -201,3 +201,5 @@ alias lina="ssh -l cloud_user $1"
 # experimental mullvad autocomplete options
 #_mullvad_options='account auto-connect block-when-disconnected bridge connect disconnect factory-reset lan reconnect relay status tunnel version'
 #complete -W "${_mullvad_options}" 'mullvad'
+eval "$(dircolors ~/gruvbox.dircolors)"
+#source "$HOME/.gruvbox_256palette.sh"
