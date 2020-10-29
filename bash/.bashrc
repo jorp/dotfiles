@@ -28,6 +28,7 @@ alias setclip="xclip -selection c "
 alias bashrc="vim ~/.bashrc"
 alias grep="grep --color"
 alias paux="ps aux | grep -i $1"
+alias desktop_proxy="ssh -D 1337 -q -C -N -f jorp@desktop"
 
 # colored man pages
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
@@ -106,11 +107,6 @@ function restaura() {
 # make a new directory and then change to it
 function mkcd() {
     mkdir -p "$1" && cd "$1" # $@ --> $1
-}
-
-# list by file byte sizes
-function lsq() {
-    ls -lh $@ | tr -s ' ' | cut -d' ' -f5,8
 }
 
 # give /simple/ arguments to bc
@@ -196,10 +192,11 @@ eval $(thefuck --alias)
 # eval $(thefuck --alias FUCK)
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-alias lina="ssh -l cloud_user $1"
 
 # experimental mullvad autocomplete options
 #_mullvad_options='account auto-connect block-when-disconnected bridge connect disconnect factory-reset lan reconnect relay status tunnel version'
 #complete -W "${_mullvad_options}" 'mullvad'
 eval "$(dircolors ~/gruvbox.dircolors)"
 #source "$HOME/.gruvbox_256palette.sh"
+# crc oc env
+#eval $(crc oc-env)

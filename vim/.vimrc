@@ -5,6 +5,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'morhetz/gruvbox'
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 set tabstop=4
