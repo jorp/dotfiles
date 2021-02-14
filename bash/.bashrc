@@ -12,20 +12,19 @@ then
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
 export HISTCONTROL=ignoreboth
 export HISTSIZE=
 export HISTFILESIZE=
 export EDITOR=vim
-# rainbox / luke smitch ps1 with $?
+# rainbox ps1 with $?
 export PS1="\$? \[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+
 alias ls="ls -lahN --color"
 alias getclip="xclip -selection c -o"
 alias setclip="xclip -selection c "
 alias bashrc="vim ~/.bashrc"
+alias reload_bashrc="source ~/.bashrc"
+alias vimrc="vim ~/.vimrc"
 alias grep="grep --color"
 alias paux="ps aux | grep -i $1"
 alias desktop_proxy="ssh -D 1337 -q -C -N -f jorp@desktop"
@@ -70,10 +69,6 @@ function buildtime {
     dnf --quiet repoquery --queryformat '%{name}-%{evr}.%{arch} %{buildtime}' $1
 }
 
-function wireless_ip {
-    ip -f inet addr show wlp4s0 | grep inet | awk '{ print $2 }'
-}
-
 # get an ordered list of subdirectory sizes
 function subdir_sizes {
     du -sk ./* | sort -n | awk 'BEGIN{ pref[1]="K"; pref[2]="M"; pref[3]="G";} { total = total + $1; x = $1; y = 1; while( x > 1024 ) { x = (x + 1023)/1024; y++; } printf("%g%s\t%s\n",int(x*10)/10,pref[y],$2); } END { y = 1; while( total > 1024 ) { total = (total + 1023)/1024; y++; } printf("Total: %g%s\n",int(total*10)/10,pref[y]); }'
@@ -99,7 +94,7 @@ function total() {
     awk "{total += \$$1} END {print total}"
 }
 
-# restore terminal after messin up console
+# restore terminal after messing up console
 function restaura() {
     perl -e 'print "\e)B";'
 }
@@ -162,17 +157,6 @@ function strerror() {
     python -c "import os; print(os.strerror($1));"
 }
 
-# screen shortcut
-function scr() {
-    if screen -ls | grep -q Main; then
-        # reattach to Main:
-        screen -xr Main
-    else
-        # name session "Main":
-        screen -S Main
-    fi
-}
-
 # print ascii tree of most intensive processes
 function process_tree() {
     watch -n 1 --no-title 'pstree $(ps -eo pid --sort %cpu | tail -n 1)'
@@ -183,20 +167,16 @@ function get_links_from() {
     lynx -dump http://www.$1 | awk '/http/{print $2}'
 }
 
+# set term title
 trap 'echo -ne "\033]2;$(history 1 | sed "s/^[0-9 ]* \+//")\007"' DEBUG
 
-# use thefuck
-# https://github.com/nvbn/thefuck
+# use thefuck: https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
 # use a diff alias
 # eval $(thefuck --alias FUCK)
 
+# if fzf installed via git rather tahn package
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# experimental mullvad autocomplete options
-#_mullvad_options='account auto-connect block-when-disconnected bridge connect disconnect factory-reset lan reconnect relay status tunnel version'
-#complete -W "${_mullvad_options}" 'mullvad'
-eval "$(dircolors ~/gruvbox.dircolors)"
+#eval "$(dircolors ~/gruvbox.dircolors)"
 #source "$HOME/.gruvbox_256palette.sh"
-# crc oc env
-#eval $(crc oc-env)
