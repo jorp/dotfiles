@@ -33,13 +33,13 @@ syntax on
 set hlsearch
 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'morhetz/gruvbox'
-Plugin 'fatih/vim-go'
-call vundle#end()
+
+" vim-plug
+call plug#begin()
+Plug 'scrooloose/nerdtree'
+Plug 'morhetz/gruvbox'
+Plug 'fatih/vim-go'
+call plug#end()
 filetype plugin indent on
 map <C-o> :NERDTreeToggle<CR>
 
