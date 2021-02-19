@@ -175,8 +175,5 @@ eval $(thefuck --alias)
 # use a diff alias
 # eval $(thefuck --alias FUCK)
 
-# if fzf installed via git rather tahn package
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 #eval "$(dircolors ~/gruvbox.dircolors)"
 #source "$HOME/.gruvbox_256palette.sh"
