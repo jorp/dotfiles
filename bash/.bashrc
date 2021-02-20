@@ -1,4 +1,4 @@
-# .bashrc
+# jorp's .bashrc
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -169,7 +169,8 @@ function get_links_from() {
 }
 
 # set term title
-trap 'echo -ne "\033]2;$(history 1 | sed "s/^[0-9 ]* \+//")\007"' DEBUG
+# --> dirty shell, blocks scp, rsync, etc.
+#trap 'echo -ne "\033]2;$(history 1 | sed "s/^[0-9 ]* \+//")\007"' DEBUG
 
 # use thefuck: https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
