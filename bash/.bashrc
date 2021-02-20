@@ -12,6 +12,7 @@ then
 fi
 export PATH
 
+export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
 export HISTSIZE=
 export HISTFILESIZE=
