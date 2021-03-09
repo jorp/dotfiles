@@ -10,7 +10,7 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
-export PATH
+export PATH="$HOME/go/bin:$PATH"
 
 export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
@@ -173,7 +173,7 @@ function get_links_from() {
 #trap 'echo -ne "\033]2;$(history 1 | sed "s/^[0-9 ]* \+//")\007"' DEBUG
 
 # use thefuck: https://github.com/nvbn/thefuck
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 # use a diff alias
 # eval $(thefuck --alias FUCK)
 
