@@ -1,0 +1,4 @@
+auto-reload yes
+reload-time 25
+highlight feedlist "---.*---" white  default bold
+highlight feedlist ".*0/0.." default default invis
