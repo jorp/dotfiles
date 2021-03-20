@@ -1,27 +1,30 @@
-https://alerts.weather.gov/cap/wwaatmget.php?x=NJZ015&y=0 "Subscriptions/News"
-http://511nj.org/RSS511Service/RSS511Service.svc/rest/rss/RSSAllNJActiveEvents "Subscriptions/News"
+https://alerts.weather.gov/cap/wwaatmget.php?x=NJZ015&y=0 "Subscriptions/News" "~Watches/Warnings/Advisories (NJZ015)"
+---Gnome---
 http://planet.gnome.org/atom.xml "Subscriptions/README/GNOME"
 https://feaneron.com/feed/ "Subscriptions/README/GNOME"
 https://blogs.gnome.org/aday/feed/ "Subscriptions/README/GNOME"
 https://blogs.gnome.org/uraeus/feed/ "Subscriptions/README/GNOME"
+---Xfce---
 https://bluesabre.org/tag/xfce/feed/ "Subscriptions/README/Xfce"
 https://blog.xfce.org/feed/ "Subscriptions/README/Xfce"
-https://github.com/ValveSoftware/Proton/releases.atom "Subscriptions/README/applications"
-http://feeds.feedburner.com/LifereaBlog "Subscriptions/README/applications"
-http://www.downcastapp.com/feed.xml "Subscriptions/README/applications"
+https://andreldm.com/feed.xml "Subscriptions/README"
+---Linux---
+https://rockylinux.org/rss.xml
 https://fedoramagazine.org/feed/ "Subscriptions/README"
 https://www.cyberciti.biz/feed/ "Subscriptions/README"
 http://feeds.feedburner.com/d0od?format=xml "Subscriptions/README"
-https://andreldm.com/feed.xml "Subscriptions/README"
-https://linux.pictures/feed "Subscriptions/README"
+https://www.phoronix.com/rss.php "Subscriptions/Technology"
+https://www.redhat.com/en/rss/blog
+---People---
+https://jorp.xyz/feed.xml
 https://lukesmith.xyz/rss.xml "Subscriptions/README"
-https://xkcd.com/atom.xml "Subscriptions/Comics"
-http://feeds.bbci.co.uk/news/rss.xml?edition=int "Subscriptions/News"
-https://www.sciencenews.org/feeds/headlines.rss "Subscriptions/News"
+---Tech News---
 http://rss.slashdot.org/Slashdot/slashdot "Subscriptions/Technology"
 http://feeds.arstechnica.com/arstechnica/index "Subscriptions/Technology"
 https://www.theregister.co.uk/headlines.atom "Subscriptions/Technology"
-http://feeds.macrumors.com/MacRumors-All "Subscriptions/Technology"
-https://www.phoronix.com/rss.php "Subscriptions/Technology"
-https://www.redhat.com/en/rss/blog
-https://www.reddit.com/search.rss?q=t14+amd+subreddit:thinkpad
+http://feeds.macrumors.com/MacRumors-All "Subscriptions/Technology" "~MacRumors"
+---Searches---
+https://www.reddit.com/search.rss?q=t14+amd+subreddit:thinkpad "~/r/thinkpad: 'T14 AMD'"
+---Other---
+http://www.downcastapp.com/feed.xml "Subscriptions/README/applications"
+https://based.cooking/rss.xml
