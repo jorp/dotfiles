@@ -54,7 +54,9 @@ cheatpaths:
   # If you have personalized cheatsheets, list them last. They will take
   # precedence over the more global cheatsheets.
   - name: personal
-    path: /home/jorp/.config/cheat/cheatsheets/personal
+    # this will place all new created/edited cheatsheets within my dotfiles repo for use with stow, so they could be deployed later on
+    # Since cheat will be looking for my cheat sheets in this location, it doesn't really matter that these will be deployed by stow
+    path: /home/jorp/dotfiles/cheat/.config/cheat/cheatsheets/personal
     tags: [ personal ]
     readonly: false
 
