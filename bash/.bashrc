@@ -44,6 +44,9 @@ export GROFF_NO_SGR=1                  # for konsole and gnome-terminal
 export LESS+='-M -R'
 export MANPAGER='less +Gg'
 
+# use FZF mappings & options if installed
+[ -f /usr/share/fzf/shell/key-bindings.bash ] && source /usr/share/fzf/shell/key-bindings.bash
+
 # ========= #
 # functions # 
 # ========= #
