@@ -13,11 +13,15 @@ fi
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
+export GEM_HOME="$HOME/.gems"
+export PATH="$PATH:$GEM_HOME/bin"
+
 export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
 export HISTSIZE=
 export HISTFILESIZE=
 export EDITOR=vim
+export VISUAL=$EDITOR
 # rainbox ps1 with $?
 export PS1="\$? \[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 export DAYS_UNTIL=$(expr '(' $(date -d 2021/04/23 +%s) - $(date +%s) + 86399 ')' / 86400)
