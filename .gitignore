@@ -1,3 +1,4 @@
 newsboat/.newsboat/*
 !newsboat/.newsboat/urls
 !newsboat/.newsboat/config
+cheat/.config/cheat/cheatsheets/community
