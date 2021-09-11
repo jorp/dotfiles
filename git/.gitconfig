@@ -1,3 +1,5 @@
 [user]
 	email = jpisaniello@pm.me
 	name = Jordan Pisaniello
+[init]
+	defaultBranch = master
