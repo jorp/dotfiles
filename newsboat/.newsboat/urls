@@ -26,8 +26,6 @@ http://rss.slashdot.org/Slashdot/slashdot "Subscriptions/Technology"
 http://feeds.arstechnica.com/arstechnica/index "Subscriptions/Technology"
 https://www.theregister.co.uk/headlines.atom "Subscriptions/Technology"
 http://feeds.macrumors.com/MacRumors-All "Subscriptions/Technology" "~MacRumors"
----Searches---
-https://www.reddit.com/search.rss?q=t14+amd+subreddit:thinkpad "~/r/thinkpad: 'T14 AMD'"
 ---Other---
 http://www.downcastapp.com/feed.xml "Subscriptions/README/applications"
 https://based.cooking/rss.xml
