@@ -1,0 +1,12 @@
+# source: https://wiki.archlinux.org/title/Fwupd#Usage
+# display devices detected by fwupd
+fwupdmgr get-devices
+
+# download latest metadata from LVFS
+fwupdmgr refresh
+
+# list updates available for devices
+fwupdmgr get-updates
+
+# install updates
+fwupdmgr update
