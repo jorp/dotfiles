@@ -1,0 +1,5 @@
+# mount or encrypt directory for first time
+encfs /full/path/to/encrypted-data /full/path/to/decrypted-data
+
+# unmount decrypted directory (encrypting the data)
+fusermount -u /full/path/to/decrypted-data
