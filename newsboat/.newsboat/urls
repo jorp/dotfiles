@@ -1,4 +1,25 @@
 https://alerts.weather.gov/cap/wwaatmget.php?x=NJZ015&y=0 "Subscriptions/News" "~Watches/Warnings/Advisories (NJZ015)"
+---Technology News---
+https://www.theregister.co.uk/headlines.atom "Subscriptions/Technology"
+http://rss.slashdot.org/Slashdot/slashdot "Subscriptions/Technology"
+http://feeds.macrumors.com/MacRumors-All "Subscriptions/Technology" "~MacRumors"
+http://feeds.arstechnica.com/arstechnica/index "Subscriptions/Technology"
+---Linux---
+https://fedoramagazine.org/feed/ "Subscriptions/README"
+https://www.cyberciti.biz/feed/ "Subscriptions/README"
+http://feeds.feedburner.com/d0od?format=xml "Subscriptions/README"
+https://www.phoronix.com/rss.php "Subscriptions/Technology"
+https://opensource.com/feed
+https://www.ghacks.net/category/operating-systems/linux/feed/
+https://www.hadess.net/feeds/posts/default
+https://rockylinux.org/rss.xml
+https://www.redhat.com/en/rss/blog
+---Hardware---
+https://frame.work/blog.rss
+---Software---
+https://firewalld.org/atom.xml
+http://www.downcastapp.com/feed.xml "Subscriptions/README/applications"
+https://bitwarden.com/blog/feed.xml
 ---Gnome---
 http://planet.gnome.org/atom.xml "Subscriptions/README/GNOME"
 https://feaneron.com/feed/ "Subscriptions/README/GNOME"
@@ -8,26 +29,6 @@ https://blogs.gnome.org/uraeus/feed/ "Subscriptions/README/GNOME"
 https://bluesabre.org/tag/xfce/feed/ "Subscriptions/README/Xfce"
 https://blog.xfce.org/feed/ "Subscriptions/README/Xfce"
 https://andreldm.com/feed.xml "Subscriptions/README"
----Linux---
-https://rockylinux.org/rss.xml
-https://fedoramagazine.org/feed/ "Subscriptions/README"
-https://www.cyberciti.biz/feed/ "Subscriptions/README"
-http://feeds.feedburner.com/d0od?format=xml "Subscriptions/README"
-https://www.phoronix.com/rss.php "Subscriptions/Technology"
-https://opensource.com/feed
-https://www.redhat.com/en/rss/blog
-https://www.ghacks.net/category/operating-systems/linux/feed/
-https://www.hadess.net/feeds/posts/default
 ---People---
 https://jorp.xyz/feed.xml
 https://www.lisenet.com/feed
----Tech News---
-http://rss.slashdot.org/Slashdot/slashdot "Subscriptions/Technology"
-http://feeds.arstechnica.com/arstechnica/index "Subscriptions/Technology"
-https://www.theregister.co.uk/headlines.atom "Subscriptions/Technology"
-http://feeds.macrumors.com/MacRumors-All "Subscriptions/Technology" "~MacRumors"
----Other---
-http://www.downcastapp.com/feed.xml "Subscriptions/README/applications"
-https://based.cooking/rss.xml
-https://bitwarden.com/blog/feed.xml
-https://frame.work/blog.rss
