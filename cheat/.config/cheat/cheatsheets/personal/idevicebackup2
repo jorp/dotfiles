@@ -1,0 +1,14 @@
+# turn on encrption
+idevicebackup2 backup encryption on PASSWORD
+
+# backup device
+idevicebackup2 backup /path/to/backup
+
+# restore backup
+idevicebackup2 restore --system --settings --reboot --password PASSWORD /path/to/backup
+
+# get UUID of device
+idevice_id
+
+# restore backup to new device
+idevicebackup2 --source SOURCE_UUID restore --system --settings --reboot --password PASSWORD /path/to/backup
