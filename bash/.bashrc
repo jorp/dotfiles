@@ -10,8 +10,6 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
 
 export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
@@ -28,10 +26,14 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
 # configuration relocation
-
+## go
+export GOPATH="$XDG_DATA_HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+## aws
 # not yet tested
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
+## ansible
 # not yet working
 #export ANSIBLE_HOME="$HOME/$XDG_DATA_HOME/ansible"
 
