@@ -23,8 +23,9 @@ export VISUAL=$EDITOR
 export PS1="\$? \[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 export DAYS_UNTIL=$(expr '(' $(date -d 2021/04/23 +%s) - $(date +%s) + 86399 ')' / 86400)
 
-# config
+# XDG base user directories
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
 
 alias ls="ls -lahN --color"
 alias getclip="xclip -selection c -o"
@@ -35,6 +36,7 @@ alias vimrc="vim ~/.vimrc"
 alias grep="grep --color"
 alias paux="ps aux | grep -i $1"
 alias desktop_proxy="ssh -D 1337 -q -C -N -f jorp@desktop"
+alias units="units --history $XDG_DATA_HOME/units_history"
 
 # colored man pages
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
