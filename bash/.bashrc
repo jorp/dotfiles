@@ -27,6 +27,11 @@ export DAYS_UNTIL=$(expr '(' $(date -d 2021/04/23 +%s) - $(date +%s) + 86399 ')'
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
+# configuration relocation
+
+# not yet working
+#export ANSIBLE_HOME="$HOME/$XDG_DATA_HOME/ansible"
+
 alias ls="ls -lahN --color"
 alias getclip="xclip -selection c -o"
 alias setclip="xclip -selection c "
