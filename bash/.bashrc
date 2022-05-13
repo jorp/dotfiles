@@ -23,6 +23,9 @@ export VISUAL=$EDITOR
 export PS1="\$? \[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 export DAYS_UNTIL=$(expr '(' $(date -d 2021/04/23 +%s) - $(date +%s) + 86399 ')' / 86400)
 
+# config
+export XDG_CONFIG_HOME="$HOME/.config"
+
 alias ls="ls -lahN --color"
 alias getclip="xclip -selection c -o"
 alias setclip="xclip -selection c "

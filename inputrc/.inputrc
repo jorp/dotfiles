@@ -1,2 +1,4 @@
+# $XDG_CONFIG_HOME not yet supported by fedora readline
+# https://wiki.archlinux.org/title/XDG_Base_Directory
 set completion-ignore-case on
 set mark-symlinked-directories on
