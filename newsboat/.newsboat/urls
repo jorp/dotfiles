@@ -20,6 +20,7 @@ https://frame.work/blog.rss
 https://firewalld.org/atom.xml
 http://www.downcastapp.com/feed.xml "Subscriptions/README/applications"
 https://bitwarden.com/blog/feed.xml
+https://webtrees.net/feed.xml
 ---Gnome---
 http://planet.gnome.org/atom.xml "Subscriptions/README/GNOME"
 https://feaneron.com/feed/ "Subscriptions/README/GNOME"
@@ -32,3 +33,4 @@ https://andreldm.com/feed.xml "Subscriptions/README"
 ---People---
 https://jorp.xyz/feed.xml
 https://www.lisenet.com/feed
+https://wilw.dev/rss.xml
