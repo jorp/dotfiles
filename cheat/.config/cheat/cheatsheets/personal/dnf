@@ -23,3 +23,5 @@ dnf upgrade --refresh
 dnf install dnf-plugin-system-upgrade
 dnf system-upgrade download --releasever=XX
 dnf system-upgrade reboot
+# after rebooting...
+dnf system-upgrade clean
