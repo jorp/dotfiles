@@ -1,0 +1,3 @@
+# chdman (in fedora 37) depends on mame-tools
+# convert cue/bin to chd
+chdman createcd -i example.cue -o example.chd --force
