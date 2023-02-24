@@ -47,7 +47,7 @@ cheatpaths:
   # Once downloaded, ensure that 'path' below points to the location at which
   # you downloaded the community cheatsheets.
   - name: community
-    path: /home/jorp/.config/cheat/cheatsheets/community
+    path: ~/.config/cheat/cheatsheets/community
     tags: [ community ]
     readonly: true
 
@@ -56,7 +56,7 @@ cheatpaths:
   - name: personal
     # this will place all new created/edited cheatsheets within my dotfiles repo for use with stow, so they could be deployed later on
     # Since cheat will be looking for my cheat sheets in this location, it doesn't really matter that these will be deployed by stow
-    path: /home/jorp/dotfiles/cheat/.config/cheat/cheatsheets/personal
+    path: ~/dotfiles/cheat/.config/cheat/cheatsheets/personal
     tags: [ personal ]
     readonly: false
 
