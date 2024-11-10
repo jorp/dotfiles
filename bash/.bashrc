@@ -47,6 +47,7 @@ alias grep="grep --color"
 alias paux="ps aux | grep -i $1"
 alias desktop_proxy="ssh -D 1337 -q -C -N -f jorp@desktop"
 alias units="units --history $XDG_DATA_HOME/units_history"
+alias df="df -hP -x tmpfs -x efivarfs -x devtmpfs"
 
 # colored man pages
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold

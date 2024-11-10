@@ -5,3 +5,4 @@ cheat/.config/cheat/cheatsheets/community
 aws/.config/aws/credentials
 ssh/.ssh/config.d/*
 syncthing/.config/autostart/mullvad-vpn.desktop
+syncthing/.config/autostart/dropbox.desktop
