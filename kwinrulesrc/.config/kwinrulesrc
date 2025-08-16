@@ -1,0 +1,10 @@
+[General]
+count=1
+rules=af319246-2e04-486e-9819-da79589e2375
+
+[af319246-2e04-486e-9819-da79589e2375]
+Description=konsole under mouse
+placement=7
+placementrule=2
+wmclass=org.kde.konsole
+wmclassmatch=1
