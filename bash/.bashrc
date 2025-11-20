@@ -61,6 +61,15 @@ export GROFF_NO_SGR=1                  # for konsole and gnome-terminal
 export LESS+='-M -R'
 export MANPAGER='less +Gg'
 
+# search for process name, case-insensitive
+psg() {
+    if [ -z "$1" ]; then
+        echo "Usage: psg <process-name>"
+        return 1
+    fi
+    ps aux | grep -i "[$(echo "$1" | cut -c1)]${1:1}"
+}
+
 # use FZF mappings & options if installed
 [ -f /usr/share/fzf/shell/key-bindings.bash ] && source /usr/share/fzf/shell/key-bindings.bash
 
@@ -70,11 +79,6 @@ export MANPAGER='less +Gg'
 # set term title
 # --> dirty shell, blocks scp, rsync, etc.
 #trap 'echo -ne "\033]2;$(history 1 | sed "s/^[0-9 ]* \+//")\007"' DEBUG
-
-# use thefuck: https://github.com/nvbn/thefuck
-#eval $(thefuck --alias)
-# use a diff alias
-# eval $(thefuck --alias FUCK)
 
 #eval "$(dircolors ~/gruvbox.dircolors)"
 #source "$HOME/.gruvbox_256palette.sh"
